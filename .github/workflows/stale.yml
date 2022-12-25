@@ -1,7 +1,6 @@
-
 name: TS-Playlist
 on:
- workflow_dispatch:
+workflow_dispatch:
   inputs:
     git_token:
       description: 'Enter your GitHub Token'     
@@ -25,7 +24,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      
+
     - name: Installing Dependencies
       continue-on-error: true
       run: |
